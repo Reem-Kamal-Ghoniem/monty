@@ -9,7 +9,9 @@ void free_stack(stack_t *head)
 	stack_t *temp;
 
 	if (head == NULL)
+	{
 		return;
+	}
 
 	do
 	{
