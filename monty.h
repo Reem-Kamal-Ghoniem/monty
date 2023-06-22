@@ -61,4 +61,5 @@ void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **head, unsigned int counter);
 void nop(stack_t **head, unsigned int counter);
+void free_stack(stack_t *head)
 #endif
