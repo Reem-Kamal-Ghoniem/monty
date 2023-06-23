@@ -1,1 +1,1 @@
-new stack
+new stack and queue
