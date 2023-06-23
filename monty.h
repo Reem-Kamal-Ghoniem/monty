@@ -68,4 +68,8 @@ void addnode(stack_t **head, int n);
 void stack(stack_t **head, unsigned int counter);
 ssize_t getstdin(char **lineptr, int file);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
+void sub(stack_t **head, unsigned int counter);
+void div(stack_t **head, unsigned int counter);
+void mul(stack_t **head, unsigned int counter);
+
 #endif
