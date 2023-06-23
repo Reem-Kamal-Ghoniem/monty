@@ -17,6 +17,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		{"pop", pop},
 		{"nop", nop},
 		{"swap", swap},
+		{"add", add},
 		{"queue", queue},
 		{NULL, NULL}
 	};

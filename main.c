@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	char content[1024];
 	FILE *file;
 	/**size_t size = 0;*/
-	char *read_line;
+	char *read_line = NULL;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
 
