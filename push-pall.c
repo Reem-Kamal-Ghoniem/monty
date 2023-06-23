@@ -61,3 +61,15 @@ void push(stack_t **head, unsigned int counter)
 	else
 		addqueue(head, new);
 }
+/**
+ * stack - prints the top
+ * @head: pointer to the head
+ * @counter: number of the line
+ * Return: void
+*/
+void stack(stack_t **head, unsigned int counter)
+{
+	(void)head;
+	(void)counter;
+	bus.lifi = 0;
+}

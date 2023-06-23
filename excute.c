@@ -5,27 +5,19 @@
 * @file: poiner to monty file
 * @counter: line_counter
 * @content: line content
-* Return: no return
+* Return: void
 */
 
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
 	instruction_t opst[] = {
-		{"push", push}, {"pall", pall}, {"pint", pint},
+		{"push", push},
+		{"pall", pall},
+		{"pint", pint},
 		{"pop", pop},
-		{"swap", swap},
-		{"add", add},
 		{"nop", nop},
-		{"sub", sub},
-		{"div", div},
-		{"mul", mul},
-		{"mod", mod},
-		{"pchar", pchar},
-		{"pstr", pstr},
-		{"rotl", rotl},
-		{"rotr", rotr},
+		{"swap", swap},
 		{"queue", queue},
-		{"stack", stack},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
@@ -53,6 +45,5 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
 	}
-
-	return 1;
+	return (1);
 }

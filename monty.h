@@ -3,10 +3,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <sys/types.h>
-#include <sys/stat.h>
+#include <unistd.h>
 #include <fcntl.h>
+#include <string.h>
 #include <ctype.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -65,6 +65,7 @@ void free_stack(stack_t *head);
 void addqueue(stack_t **head, int n);
 void queue(stack_t **head, unsigned int counter);
 void addnode(stack_t **head, int n);
+void stack(stack_t **head, unsigned int counter);
 ssize_t getstdin(char **lineptr, int file);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 #endif
