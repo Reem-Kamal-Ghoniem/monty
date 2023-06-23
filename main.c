@@ -27,20 +27,18 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	do
-	{
+	do {
 		line = fgets(content, 1024, file);
-		line = strtok (line, " ");
+		/**line = strtok (line, " ");
 		if (line == NULL)
-			continue;
+			continue;*/
 		bus.content = content;
 		counter++;
 		if (line != NULL)
 			execute(content, &stack, counter, file);
 
 		/**free(content);*/
-	}
-	while (line);
+	} while (line);
 	free_stack(stack);
 	fclose(file);
 return (0);
