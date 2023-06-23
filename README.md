@@ -1,1 +1,1 @@
-new stack, push, pall, pop
+new stack
