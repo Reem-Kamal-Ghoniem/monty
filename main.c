@@ -1,5 +1,5 @@
 #include "monty.h"
-
+bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - main function
 * @argc: arguments number
@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
 	char *line = NULL;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
-	bus_t bus = {NULL, NULL, NULL, 0};
 
 	if (argc != 2)
 	{
