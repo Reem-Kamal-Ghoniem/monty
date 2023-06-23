@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	char content[1024];
 	FILE *file;
 	/**size_t size = 0;*/
-	char *read_line = NULL;
+	char *line = NULL;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
 
@@ -28,16 +28,17 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while (read_line != NULL)
+	do
 	{
-		read_line = fgets(content, 1024, file);
+		line = fgets(content, 1024, file);
 		bus.content = content;
 		counter++;
-		if (read_line != NULL)
+		if (line != NULL)
 			execute(content, &stack, counter, file);
 
 		/**free(content);*/
 	}
+	while (line);
 	free_stack(stack);
 	fclose(file);
 return (0);
