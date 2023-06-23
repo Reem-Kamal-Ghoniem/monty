@@ -30,9 +30,9 @@ int main(int argc, char *argv[])
 	do
 	{
 		line = fgets(content, 1024, file);
-		/**line = strtok (line, " ");
+		line = strtok (line, " ");
 		if (line == NULL)
-			continue;*/
+			continue;
 		bus.content = content;
 		counter++;
 		if (line != NULL)
