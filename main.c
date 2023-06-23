@@ -1,5 +1,4 @@
 #include "monty.h"
-bus_t bus = {NULL, NULL, NULL, 0};
 
 /**
 * main - main function
@@ -15,6 +14,7 @@ int main(int argc, char *argv[])
 	char *line = NULL;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
+	bus_t bus = {NULL, NULL, NULL, 0};
 
 	if (argc != 2)
 	{
@@ -31,6 +31,8 @@ int main(int argc, char *argv[])
 	do
 	{
 		line = fgets(content, 1024, file);
+		if (line[0] == '\n')
+			continue;
 		bus.content = content;
 		counter++;
 		if (line != NULL)
