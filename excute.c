@@ -23,6 +23,8 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		{"div", f_div},
 		{"mul", mul},
 		{"mod", f_mod},
+		{"pchar", f_pchar},
+		{"pstr", f_pstr},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
