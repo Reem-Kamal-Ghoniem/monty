@@ -65,4 +65,6 @@ void free_stack(stack_t *head);
 void addqueue(stack_t **head, int n);
 void queue(stack_t **head, unsigned int counter);
 void addnode(stack_t **head, int n);
+ssize_t getstdin(char **lineptr, int file);
+int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 #endif
